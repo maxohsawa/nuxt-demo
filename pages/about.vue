@@ -3,19 +3,19 @@
     <h1>about</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur veniam repellat error eius voluptates praesentium temporibus cumque sequi hic possimus.</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur veniam repellat error eius voluptates praesentium temporibus cumque sequi hic possimus.</p>
-    <h3 class="text-xl">exchange rate</h3>
-    <div v-for="currency in Object.keys(data)">
-      <p>USD/{{ data[currency].code }}: {{ data[currency].value }}</p>
-    </div>
+    <h3 class="text-2xl">exchange rates</h3>
+    <div v-for="c of Object.keys(currencies.data)">USD/{{ c }}: {{ currencies.data[c].value }}</div>
+   
   </div>
 </template>
 
 <script setup>
-  const { data } = await useFetch('/api/test?name=max', {
-    method: 'post',
-    body: { age: 36 }
-  })
-  console.log('data', data)
+  // const { data } = await useFetch('/api/test?name=max', {
+  //   method: 'post',
+  //   body: { age: 36 }
+  // })
+  const { data: currencies } = await useFetch('/api/currency/EUR,USD,CAD')
+  
 </script>
 
 <style scoped>

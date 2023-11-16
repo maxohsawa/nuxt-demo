@@ -43,5 +43,9 @@
 - use getQuery to get query params from api request
 - use readBody to get body from api request
 - using $fetch in server event handler for third party requests
+- dynamic server routes
+
+### runtimeConfig environment variables
+- nuxt config has access to environment variables through runtimeConfig
 
 ## special thanks to netninja
