@@ -2,7 +2,7 @@
   <div>
     <h1>products</h1>
     <div class="grid grid-cols-2 gap-5">
-       <div v-for="p in products">
+        <div v-for="p in products">
           <ProductCard :product="p" />
         </div>
     </div>

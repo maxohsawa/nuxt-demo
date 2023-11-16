@@ -38,4 +38,10 @@
 - useHead composable for editing metadata on specific views
 - using Head, Title, Meta components on dynamic page
 
+### server routes and api
+- use defineEventHandler to define api function
+- use getQuery to get query params from api request
+- use readBody to get body from api request
+- using $fetch in server event handler for third party requests
+
 ## special thanks to netninja
