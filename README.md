@@ -29,7 +29,8 @@
 
 ### error page
 - custom 404 page
-- undefined routes
-- errors on dynamic routes
+- undefined routes via error.vue
+- errors on dynamic routes via createError composable
+- clearing nuxt error using clearError composable and redirecting user to safe page
 
 ## special thanks to netninja
