@@ -1,75 +1,35 @@
-# Nuxt 3 Minimal Starter
+# nuxt-demo
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## features demonstrated
 
-## Setup
+### frontend routing
+- frontend routing mimics file structure of project
+- index.vue is used to signify root and subroots
+- square bracket notation in file name denotes slug for dynamic routing
+- nuxt link hyperlinks within frontend routing system
 
-Make sure to install the dependencies:
+### layouts
+- default.vue
+- outlet is designated by `<slot />`
+- custom layout using `definePageMeta`
 
-```bash
-# npm
-npm install
+### modules
+- integration of tailwind via nuxt modules
+- custom css via assets/css directory
 
-# pnpm
-pnpm install
+### fetching data
+- useFetch composable from composition api
+- injecting data into markup
+- use of v-for to loop through data array
+- use of key option with useFetch to ensure unique fetch
 
-# yarn
-yarn install
+### reusable components
+- components directory
+- using defineProps to use data passed through props
 
-# bun
-bun install
-```
+### error page
+- custom 404 page
+- undefined routes
+- errors on dynamic routes
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## special thanks to netninja
