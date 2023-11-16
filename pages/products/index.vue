@@ -15,6 +15,10 @@
   })
 
   const { data: products } = await useFetch('https://fakestoreapi.com/products')
+
+  useHead({
+    title: 'cube shop'
+  })
 </script>
 
 <style scoped>

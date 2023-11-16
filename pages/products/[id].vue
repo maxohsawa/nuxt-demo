@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>cube shop | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
     <ProductDetail :product="product" />
   </div>
 </template>
