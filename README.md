@@ -33,4 +33,9 @@
 - errors on dynamic routes via createError composable
 - clearing nuxt error using clearError composable and redirecting user to safe page
 
+### metadata & useHead
+- add global meta data and links
+- useHead composable for editing metadata on specific views
+- using Head, Title, Meta components on dynamic page
+
 ## special thanks to netninja
